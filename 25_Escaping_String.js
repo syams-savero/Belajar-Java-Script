@@ -7,6 +7,6 @@
 // output dari penulisan di atas adalah "contoh kalimat"
 // contoh :
 
-let uhuy = "Dia bilang \"ihir\"."
+let uhuy = "Dia bilang \"ihir\".";
 // output dari variabel di atas adalah :
 // Dia bilang "ihir".
