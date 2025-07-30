@@ -1,6 +1,6 @@
 // Cara singkat untuk pembagian
 // Contoh
-var g = 10
+var g = 10;
 // Cara lama
 g = g / 5;
 // Cara cepat
