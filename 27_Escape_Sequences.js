@@ -60,4 +60,5 @@ var data = "Umur\n\\18\nSaya 'Siap'";
 Umur
 \18
 Saya 'Siap'
+*/
 
