@@ -3,7 +3,7 @@
 const ihir = [
 	[1, 2, 3],
 	[4, 5, 6],
-	[[7.8, 9], 10, 11]
+	[[7, 8, 9], 10, 11]
 ];
 // Soal : Akses angka 2, 6, 8, 11
 
@@ -20,3 +20,12 @@ const angka8 = ihir[2][0][1]; // output nya adalah angka 8
 const angka11 = ihir[2][2]; // output nya adalah angka 11
 
 // ini cukup sulit dijelaskan, kalau belum paham bisa tanya saya atau AI Chatbot
+
+// Berikut adalah sedikit visualisasi
+// ihir = [
+//   [1, 2, 3],        // ihir[0]
+//   [4, 5, 6],        // ihir[1]
+//   [[7, 8, 9], 10, 11] // ihir[2]
+//         ↑   ↑   ↑
+//         0   1   2
+// ]
