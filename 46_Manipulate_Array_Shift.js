@@ -4,5 +4,5 @@
 // Contoh :
 const HARGA = [[100.000], [50.000]];
 const HARGATERMAHAL = HARGA.shift();
-console.log(HARGA);
-console.log(HARGATERMAHAL);
+// Jadi isi dari variabel HARGA adalah 50.000
+// Sedangkan variabel HARGATERMAHAL sekarang berisi 100.000
