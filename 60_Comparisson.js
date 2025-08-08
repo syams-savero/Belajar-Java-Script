@@ -9,3 +9,6 @@ function layak(bersih) {
 
 console.log(layak(10)); // Outputnya akan layak pakai
 console.log(layak(9));  // Outputnya akan tidak layak pakai
+
+//Funfact : 5 dan "5" juga akan dideteksi sama walau beda jenis data jika menggunakan ==
+//Untuk mengatasinya akan dibahas di next level
