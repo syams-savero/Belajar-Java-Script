@@ -2,7 +2,7 @@
 // Bedanya ini lebih seperti larangan misal, Saldo tidak boleh 0 
 // Contoh :
 function saldo(dana) {
-    if (dana += 0) {      //Ini sama seperti kalau saldo tidak 0 maka berhasil, kalau saldo 0 maka gagal
+    if (dana != 0) {      //Ini sama seperti kalau saldo tidak 0 maka berhasil, kalau saldo 0 maka gagal
         return "Jumlah Dana " + dana;
     }
     return "Tolong masukan dana";
