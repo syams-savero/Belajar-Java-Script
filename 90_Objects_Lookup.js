@@ -78,7 +78,7 @@ function chainLookup(ChainID) {       //Membuat fungsi untuk input
     56: "BNB Smart Chain"             //Properties 56 degan value "BNB Smart Chain"
   };
   hasil = alamatBlockchain[ChainID];  //Mengisi variabel hasil dengan variabel untuk Objects dan menggunakan parameter function sebagai input properties dalam Objects
-  return hasil || "Chain ID tidak dapat ditemukan"; //Memberi hasil jika Chain ID tersedia, dan memberi hasil "Chain ID tidak dapat ditemukan" jika user mengisi Chain ID yang tidak tersedia di Obejcts
+  return hasil || "Chain ID tidak dapat ditemukan\nSilahkan pilih :\n1 = Ethereum\n5 = Goerli Testnet\n137 = Polygon Mainnet\n80001 = Polygon Mumbai Testnet\n56 = Binance Smart Chain"; //Memberi hasil jika Chain ID tersedia, dan memberi hasil "Chain ID tidak dapat ditemukan" jika user mengisi Chain ID yang tidak tersedia di Obejcts
 };
 
 console.log(chainLookup(1));      // Ethereum Mainnet
