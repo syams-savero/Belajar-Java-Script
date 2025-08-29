@@ -5,8 +5,8 @@ console.log(camper);
 menjadi ("David"). hal ini tidak akan menimbulkan error maupun masalah, namun dalam kode yang kompleks dan besar 
 hal ini tentu bisa menjadi masalah. untuk menghindari itu kita bisa mengganti var dengan let*/
 
-let ihir = "uhuy";
-let ihir = "hi";
+// let ihir = "uhuy";
+// let ihir = "hi";
 /* Disini variabel ihir tidak akan bisa ditulis 2x, variabel ihir akan tetap berisi "uhuy" bukan "hi"
 hal ini juga akan menunjukan error karena ada variabel let yang ditulis lebih dari 1*/
 
