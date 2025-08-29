@@ -3,3 +3,4 @@
  let nama = "Cihuy";
  var perkenalan = "Halo, Nama saya adalah " + nama + ". Apa kabar?";
  // hasilnya adalah Halo, Nama saya adalah Cihuy. Apa kabar?
+ 

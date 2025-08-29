@@ -29,3 +29,4 @@ const angka11 = ihir[2][2]; // output nya adalah angka 11
 //         ↑   ↑   ↑
 //         0   1   2
 // ]
+

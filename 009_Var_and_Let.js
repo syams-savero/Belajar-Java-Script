@@ -11,3 +11,4 @@ let ihir = "hi";
 hal ini juga akan menunjukan error karena ada variabel let yang ditulis lebih dari 1*/
 
 // Kesimpulan, menggunakan let lebih aman untuk jangka panjang 
+

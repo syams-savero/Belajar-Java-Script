@@ -6,3 +6,4 @@ var contoh = "Dia bilang \"ihir\".";
 var contoh = 'Dia bilang "ihir".';
 // Dari kedua cara ini output yang diberikan sama sama
 // Dia bilang "ihir".
+

@@ -14,3 +14,4 @@ b = b + 1;
 // Variabel b dipanggil lalu diisi dengan variabel b yang memiliki nilai 5 dan ditambah 1 sehingga jadi 6
 c = c + " Kaya!";
 // Variabel c dipanggil yang yang berisi "Aku" ditambah dengan " Kaya!" sehingga jadi "Aku Kaya!"
+
