@@ -9,3 +9,4 @@
 // Contoh :
 var selamatDatang;
 selamatDatang = "HI";
+

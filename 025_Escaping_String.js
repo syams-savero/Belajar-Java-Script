@@ -10,3 +10,4 @@
 let uhuy = "Dia bilang \"ihir\".";
 // output dari variabel di atas adalah :
 // Dia bilang "ihir".
+
