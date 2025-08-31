@@ -30,3 +30,35 @@ console.log(cariBarang);
 // Jika ingin tau motor di garasi
 cariBarang = rumah.luar.garasi.motor;
 console.log(cariBarang);
+
+
+// Ini juga bisa digunakan bersamaan dengan array
+// Contoh latihan soal :
+
+/* Buat sebuah object bernama block yang menyimpan:
+number (nomor block)
+hash (string)
+miner (object) dengan properti address dan reward
+transactions (array) berisi minimal 2 transaksi.
+Setiap transaksi berupa object { from, to, value } */
+
+let block = {
+    number: 1,
+    hash: "SHA-256",
+    miner: {
+        adress: "763821673",
+        reward: "1 BTC"
+    },
+    transcations: [
+        {
+            from: "user 1",
+            to: "user 2",
+            value: "0.5 BTC"
+        },
+        {
+            from: "user 2",
+            to: "user 3",
+            value: "0.25 BTC"
+        }
+    ]
+};
