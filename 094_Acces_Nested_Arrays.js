@@ -195,4 +195,23 @@ let users = [
     }
 ];
 
-console.log(users);
+// Cara mengakses data di atas
+let cekIsi = "";
+
+//Ambil balance dari token kedua di wallet pertama milik user kedua.
+cekIsi = users[1].wallets[0].tokens[1].balance;
+console.log(cekIsi);
+
+//Ambil txHash dari transaksi pertama token pertama di wallet kedua user pertama.
+cekIsi = users[0].wallets[1].tokens[0].transactions[0].txHash;
+console.log(cekIsi);
+
+//Ambil symbol token pertama di wallet kedua user kedua.
+cekIsi = users[1].wallets[1].tokens[0].symbols;
+console.log(cekIsi);
+
+//Ambil semua txHash dari token pertama wallet pertama user pertama. */
+cekIsi = users[0].wallets[0].tokens[0].transactions[0].txHash;
+console.log(cekIsi);
+cekIsi = users[0].wallets[0].tokens[0].transactions[1].txHash;
+console.log(cekIsi);
