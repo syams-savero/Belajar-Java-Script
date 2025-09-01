@@ -62,3 +62,18 @@ let block = {
         }
     ]
 };
+
+// Cara akses nya
+let munculkanValue = "";
+
+// Jika kita ingin akses value dari reward
+munculkanValue = block.miner.reward;
+console.log(munculkanValue);
+
+// Jika kita ingin akses value dari transaksi pertama
+munculkanValue = block.transcations[0];
+console.log(munculkanValue);
+
+// Jika kita ingin akses value dari siapa pengirim transaksi kedua
+munculkanValue = block.transcations[1].from;
+console.log(munculkanValue);
