@@ -76,3 +76,44 @@ console.log(updateRecords(recordCollection, 1245, "tracks", "Addicted to Love"))
 
 console.log(updateRecords(recordCollection, 1245, "albumTitle", "Riptide"));
 // sekarang recordCollection[1245].albumTitle = "Riptide"
+
+
+// Latihan soal berbasis blockchain 
+
+// Data
+const wallets = {
+  1001: { owner: "Alice", balance: 10, transactions: ["deposit 10"] },
+  1002: { owner: "Bob", balance: 50, transactions: ["deposit 50"] },
+  1003: { owner: "Charlie", balance: 0 }
+};
+
+// Perintah
+/* bikin fungsi updateWallet(wallets, id, prop, value) dengan aturan:
+Selalu return object wallets.
+Kalau value kosong (""), hapus property prop dari wallet dengan id itu.
+Kalau prop === "balance" →
+Tambahkan value (angka) ke balance sekarang.
+Simpan juga transaksi "update balance X" ke array transactions.
+Kalau prop === "transactions" dan wallet belum punya property transactions → bikin array kosong lalu masukkan value.
+Kalau prop === "transactions" dan wallet sudah ada → tambahkan value ke akhir array.
+Kalau prop bukan "balance" atau "transactions", cukup assign langsung. */
+
+// Jawab
+function updateWallet(wallet, id, prop, value) {
+  if (value === "") {
+    // hapus property kalau value kosong
+    delete wallet[id][prop];
+  } else if (prop === "balance") {
+    // tambah balance
+    wallet[id][prop] += value;
+
+    // kalau belum ada transactions, bikin array kosong
+    if (!wallet[id].hasOwnProperty("transactions")) {
+      wallet[id]["transactions"] = [];
+    }
+
+    // catat transaksi
+    wallet[id]["transactions"].push("Update balance value " + value);
+  }
+  return wallet;
+};
