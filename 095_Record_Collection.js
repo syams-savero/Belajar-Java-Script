@@ -37,7 +37,7 @@ function updateRecords(records, id, prop, value) {
   } else if (prop !== "tracks") {
     records[id][prop] = value;
   } else if (prop === "tracks" && value !== "") {
-    
+    if (!tracks[id])
   }
 }
 
