@@ -48,20 +48,7 @@ const recordCollection = {
 };
 
 // Only change code below this line
-function updateRecords(records, id, prop, value) {
-  if (value === "") {
-    delete records[id][prop];
-  } else if (prop !== "tracks") {
-    records[id][prop] = value;
-  } else {
-    if (!records[id].hasOwnProperty("tracks")) {
-      records[id]["tracks"] = [];
-    }
-    records[id]["tracks"].push(value);
-  }
-  return records;
-};
-
+function
 console.log(updateRecords(recordCollection, 5439, "artist", "ABBA"));
 // sekarang recordCollection[5439].artist = "ABBA"
 
