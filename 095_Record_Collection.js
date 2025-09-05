@@ -31,15 +31,19 @@ const recordCollection = {
 };
 
 // Only change code below this line
-function updateRecords(records, id, prop, value) {
-  if (value === "") {
+function updateRecords(records, id, prop, value) {    // Membuat function untuk mengubah data di atas
+  if (value === "") {                                 // Jika value nya kosong maka akan menghapus properties yang value nya kosong
     delete records[id][prop];
-  } else if (prop !== "tracks") {
+  } else if (prop !== "tracks") {                     // Jika nama prop nya bukan tracks, maka bisa ubah isi dari prop nya
     records[id][prop] = value;
-  } else if (prop === "tracks" && value !== "") {
-    if (!tracks[id])
+  } else if (prop === "tracks") {                     // Jika nama prop nya adalah tracks maka akan menambahkan value ke prop tersebut,
+    if (!records[id].hasOwnProperty("tracks")) {      // tapi sebelum itu, prop di cek dahulu punya properties tracks atau tidak, jika belum punya maka akan membuat properties bernama "tracks" dan menambahkan array
+      records[id]["tracks"] = [];
+    }
+    records[id].tracks.push(value);
   }
-}
+  return records;                                     // Mengupdate hasil perubahan ke records
+};
 
 
 console.log(updateRecords(recordCollection, 5439, "artist", "ABBA"));
