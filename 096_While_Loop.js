@@ -12,3 +12,20 @@ while (i >= 0) {        // ketika i lebih besar atau sama dengan 0
 // Lihat hasil
 console.log(array); //Array sudah terisi dengan angka yang diminta
 console.log(i);     //karena value 5 dikurangi sebanyak 6 kali maka hasil akhirnya adalah -1
+
+
+// latihan soal
+// kita akan mengerjakan latihan soal mengenai mining blok di blockchain menggunakan while loop
+// Contoh :
+
+let blokSekarang = 0;
+let blokTarget = 50;
+while (blokSekarang < blokTarget) {
+    blokSekarang++;
+    console.log("Mining Blok " + blokSekarang);
+}
+
+// Hasil akhir blok sekarang
+console.log(blokSekarang);
+
+// note : ini hanya simulasi, real case nya jauh lebih rumit dari ini
