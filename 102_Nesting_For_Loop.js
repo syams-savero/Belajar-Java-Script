@@ -6,7 +6,7 @@ let array2D = [[1, 2], [3, 4], [5, 6, 7]];
 let hasilPerkalian = 1;
 for (let i = 0; i < array2D.length; i++) {
     console.log("Array yang di akses saat ini " + array2D[i]);
-    for (let j = 0; j < array2D[1].length; j++) {
+    for (let j = 0; j < array2D[i].length; j++) {
         console.log("Sub Array yang di akses saat ini " + array2D[i][j]);
         hasilPerkalian *= array2D[i][j];
     };
