@@ -47,11 +47,11 @@ function phoneticLookup(val) {
 
   result = lookup[val];
   // Only change code above this line
-  return result;
+  return result || "Not Found";
 }
 
 console.log(phoneticLookup("charlie")); // "Chicago"
-console.log(phoneticLookup(""));        // undefined
+console.log(phoneticLookup(""));        // Not Found
 
 
 // Latihan soal 
