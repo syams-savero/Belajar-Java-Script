@@ -11,9 +11,9 @@ let rumah = {
 }
 
 // Membuat sistem check
-function cekObject(object, cek) {
-    if (object.hasOwnProperty(cek)) {       //kalau object punya properti dengan nama parameter cek (langsung dari objek itu sendiri, bukan dari prototype-nya), maka kondisi if bernilai true.
-        return object[cek];                 //Hasil true akan menjalankan isi dari properties object yang function nya diberi input 
+function cekObject(Namaobject, cekProperties) {
+    if (Namaobject.hasOwnProperty(cekProperties)) {       //kalau object punya properti dengan nama parameter cek (langsung dari objek itu sendiri, bukan dari prototype-nya), maka kondisi if bernilai true.
+        return Namaobject[cekProperties];                 //Hasil true akan menjalankan isi dari properties object yang function nya diberi input 
     } else {
         return "tidak ditemukan";
     }
