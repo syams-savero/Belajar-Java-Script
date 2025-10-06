@@ -71,7 +71,7 @@ munculkanValue = block.miner.reward;
 console.log(munculkanValue);
 
 // Jika kita ingin akses value dari transaksi pertama
-munculkanValue = block.transcations[0];
+munculkanValue = block.transcations[0].value;
 console.log(munculkanValue);
 
 // Jika kita ingin akses value dari siapa pengirim transaksi kedua
