@@ -7,3 +7,10 @@ const gabungArray = (a, b) => a.concat(b);
 
 const hasil = gabungArray(array1, array2);
 console.log(hasil);
+
+// atau bisa juga
+function gabungArray2(a, b) {
+    return a.concat(b);
+}
+
+console.log(gabungArray(array1, array2));
