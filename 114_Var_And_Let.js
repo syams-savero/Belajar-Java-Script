@@ -18,12 +18,12 @@ console.log(dibawah10(22));
 // contoh menggunakan let
 
 function dibawah20(angka) {
-    let jawabam = "angka dibawah 20"
+    let jawaban = "angka dibawah 20"
     if (angka > 20) {
         let jawaban = "angka di atas 20";
         return jawaban;
     } else {
-        return jawabam;
+        return jawaban;
     };
 };
 
