@@ -20,4 +20,4 @@ console.log(penjumlahan2(2));       // hasilnya akan 5 karena 2 + 3
 const pengurangan = (a = 0, b = 0) => a - b;
 // Kedua parameter memiliki nilai base yaitu 0
 console.log(pengurangan());  // dia akan memberikan hasil 0 sebagai efault value
-console.log(pengurangan(1)); // 1 - 0 = 0
+console.log(pengurangan(1)); // 1 - 0 = 1
