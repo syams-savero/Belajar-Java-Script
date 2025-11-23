@@ -47,7 +47,7 @@ const tx3 = {
    token :                      */
    
 
-const summary = ({from = from, to = "invalid", value = 0, token = "none"}) => `Transaction Summary
+const summary = ({from, to = "invalid", value = 0, token = "none"}) => `Transaction Summary
 from : ${from}
 to : ${to}
 value : ${value}
