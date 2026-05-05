@@ -1,7 +1,13 @@
-let age = 43;
+let kupon = true;
 
-if (age <= 21) {
-    console.log("You can not enter the club!")
-} else {
-    console.log("welcome!")
+function cekKupon() {
+    if (kupon) {
+        console.log("anda punya kupon");
+        kupon === false;
+    } else {
+        console.log("Anda tidak punya kupon")
+    }
 }
+
+cekKupon();
+cekKupon();
