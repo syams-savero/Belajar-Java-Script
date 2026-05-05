@@ -1,4 +1,7 @@
-let firstCards = 10;
-let secondCards = 5;
-let sum = firstCards + secondCards;
-console.log(sum);
+let age = 43;
+
+if (age <= 21) {
+    console.log("You can not enter the club!")
+} else {
+    console.log("welcome!")
+}
