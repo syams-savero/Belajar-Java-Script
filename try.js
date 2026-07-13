@@ -24,3 +24,21 @@ if (age < 6) {
 } else {console.log("Senior citizen discount")}
 
 
+
+// For loop
+
+let largeCountries = ["China", "India", "Indonesia", "USA", "Pakistan"];
+
+for (let i = 0; i < largeCountries.length; i++) {
+  console.log("- " + largeCountries[i]);
+}
+
+
+// Push, pop, unshift, shift 
+let Countries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+
+Countries.pop()
+Countries.push("Pakistan")
+Countries.shift()
+Countries.unshift("China")
+console.log(Countries)
