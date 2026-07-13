@@ -42,3 +42,23 @@ Countries.push("Pakistan")
 Countries.shift()
 Countries.unshift("China")
 console.log(Countries)
+
+
+// Logical Operator 
+let dayOfMonth = 13;
+let weekDay = "Friday";
+
+if (weekDay === "Friday" && dayOfMonth === 13) {
+  console.log("Run")
+}
+
+
+// Random Number
+let hand = ["papper", "rock", "scissor"]
+
+function rps() {
+  let random = Math.floor(Math.random() * 3);
+    console.log(hand[random])
+}
+
+rps()
