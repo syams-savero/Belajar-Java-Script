@@ -62,3 +62,26 @@ function rps() {
 }
 
 rps()
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let hasilGenap = [];
+
+function genap(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      hasilGenap.push(arr[i]);
+    }
+  }
+}
+genap(arr)
+console.log(hasilGenap)
+
+function hitungRataRata(nilai) {
+  let total = 0;
+  for (let i = 0; i < nilai.length; i++) {
+    total += nilai[i];
+  }
+  return total / nilai.length;
+}
+
+console.log(hitungRataRata([8, 7, 9, 6, 10]))
