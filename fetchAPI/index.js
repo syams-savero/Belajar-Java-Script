@@ -7,6 +7,7 @@ button.addEventListener("click", async () => {
   );
   const data = await response.json();
   let name = nameList(data);
+  console.log(response.ok)
   console.log(name)
   list.innerHTML = `<p> berikut adalah list nama yang ada : ${name.join(', ')}</p>`
 })
