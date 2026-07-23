@@ -4,7 +4,7 @@ let list = document.getElementById("list")
 button.addEventListener("click", async () => {
   try {
   const response = await fetch(
-    "https://jsonplaceholder.typicode.com/users"
+    "https://jsonplaceholder.typicode.com/users?id=1"
   );
   const data = await response.json();
   let name = nameList(data);
