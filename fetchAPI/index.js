@@ -2,6 +2,8 @@ let button = document.getElementById("btn")
 let list = document.getElementById("list")
 let buttonGET = document.getElementById("btn-get")
 let listGet = document.getElementById("list-get")
+let buttonPUT = document.getElementById("btn-put")
+let listPUT = document.getElementById("put")
 
 // function POST 
 button.addEventListener("click", async () => {
@@ -40,6 +42,30 @@ buttonGET.addEventListener("click", async () => {
     listGet.innerHTML = "<p style='color:red'>Gagal ambil data</p>"
   }
 })
+
+
+// function PUT 
+buttonPUT.addEventListener("click", async () => {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/1", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json"},
+      body: JSON.stringify({
+        name: "Syams",
+        username: "syamssavero",
+        email: "syams@email.com"
+      })
+    })
+    const data = await response.json();
+    console.log(response.ok);
+    console.log(data);
+    listPUT.innerHTML = `<p> Berikut adalah data yang di PUT : <br> nama : ${data.name} <br> username : ${data.username} <br> email : ${data.email} </p>`
+  } catch (error) {
+    console.log("error:", error)
+    listPUT.innerHTML = "<p>Gagal PUT</p>"
+  }
+})
+
 
 // read Array function 
 function nameList(userName) {
