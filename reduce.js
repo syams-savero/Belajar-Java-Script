@@ -6,3 +6,16 @@ const sumWithInitial = arr.reduce(
 )
 
 console.log(sumWithInitial)
+
+
+const tabungan = [{nama: "Andi", uang: 50000},
+                  {nama: "Akmal", uang: 75000},
+                  {nama: "Amar", uang: 65000}]
+
+const totalTabungan = 0;
+const iterasiTabungan = tabungan.reduce((accumulator, currentValue) => accumulator + currentValue.uang, totalTabungan)
+console.log(iterasiTabungan)
+
+const panjangUsername = 0;
+const totalPanjangUsername = tabungan.reduce((accumulator, currentValue) => accumulator + currentValue.nama.length, panjangUsername)
+console.log(totalPanjangUsername)
